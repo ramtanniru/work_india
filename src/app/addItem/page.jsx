@@ -1,11 +1,14 @@
 "use client"
 export default function AddItem() {
     return (
-      <div className="min-h-screen pt-100 bg-white p-4">
-        <div className="flex justify-between items-center mb-4">
-          <h1 className="text-lg font-bold">Add Item</h1>
-          <button className="bg-green-500 text-white px-3 py-2 rounded">Add</button>
-        </div>
+    <div>
+      <div className="bg-gray-100">
+          <div className="flex justify-between items-center p-5 bg-gray">
+            <h1 className="text-lg font-bold text-black">Add Item</h1>
+            <button className="bg-green-500 text-white px-3 py-2 rounded">Add</button>
+          </div>
+      </div>
+      <div className="min-h-screen bg-white p-4">
         <form className="space-y-4">
           <div>
             <input type="text" placeholder="Item Name" className="w-full p-2 border border-gray-300 rounded" />
@@ -24,6 +27,7 @@ export default function AddItem() {
           </button>
         </form>
       </div>
+    </div>
     );
   }
   
